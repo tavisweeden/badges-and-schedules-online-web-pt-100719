@@ -21,5 +21,13 @@ def assign_rooms(speakers)
 room_array
 end
 
-def printer(list1, list2)
+def printer(name_array)
+  batch_badge_creator(names_array).each do |str|
+    puts str
+end
+
+assign_rooms(names_array).each do |str|
+  puts str
+ end
+end
   
